@@ -36,6 +36,7 @@ System architecture, components, and design patterns
 #### [client/](client/)
 - [CLIENT-CAPABILITY-MATRIX.md](client/CLIENT-CAPABILITY-MATRIX.md) - What the client can do
 - [WINDOW-CAPABILITIES.md](client/WINDOW-CAPABILITIES.md) - Available UI surfaces
+- [EODEV-DEVELOPMENT.md](client/EODEV-DEVELOPMENT.md) - EODev source priority, UI boundaries, and build rules
 - Vanilla client constraints and capabilities
 
 #### [data-files/](data-files/)
