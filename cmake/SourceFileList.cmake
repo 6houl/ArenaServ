@@ -1,4 +1,4 @@
-# $Id$
+﻿# $Id$
 # EOSERV is released under the zlib license.
 # See LICENSE.txt for more info.
 
@@ -285,6 +285,7 @@ set(TestFiles
 	src/test/handlers/Login_test.cpp
 	src/test/util/semaphore_test.cpp
 	src/test/util/threadpool_test.cpp
+	src/test/arena_test.cpp
 )
 
 set(LocalConf
