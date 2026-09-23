@@ -1,0 +1,9 @@
+<title>
+<newline>
+<normal noicon>Hitpoints define how much damage your character can take before it dies. The red meter on top of the screen shows your current hitpoints, also a temporary small bar will appear right above your cahracter after it has taken damage from an npc.
+<newline>
+<bold>Recovery
+<newline>
+<normal noicon>Hitpoints will automatically recover in time. If you want to recover faster you can use a heal potion, or a heal spell to speed up the recovery. You will recover more hitpoints when you sit down on the ground as well (press F11)
+<newline>
+<link index>Back to index

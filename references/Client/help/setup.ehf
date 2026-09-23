@@ -1,0 +1,29 @@
+<title>
+<newline>
+<normal noicon>A useful setup tool is provided with every copy of Endless. You can find it in your start menu: Start -> programs (all programs, for windows XP users) -> Endless Online -> setup endless online
+<newline>
+<bold>Connection
+<newline>
+<normal noicon>Here you can switch the ip/port information that tells Endless which server to connect. This is usefull when you get ip/port information for another endless server. (see Servers for more info.)
+<newline>
+<bold>Graphics
+<newline>
+<normal noicon>Here you can make endless run in windowed or fullscreen mode. If you have an older computer you might consider turning page flipping, shadows and chat balloons off to gain a little bit of speed.
+<newline>
+<bold>Sound
+<newline>
+<normal noicon>Here you can turn on/off the background music or sound effects.
+<newline>
+<bold>Languauge
+<newline>
+<normal noicon>You can set the keyboard layout to a different language if you have a non international keyboard. It is also possible to change the interface to another language (if supported)
+<newline>
+<bold>Socialize
+<newline>
+<normal noicon>Here you can change the behavior of your chat and whisper settings. Also it is possible to log of all your chat activity.
+<newline>
+<bold>Advanced
+<newline>
+<normal noicon>Here you can change some render and memory behavior of the client (this might be useful in case you are having trouble running the game)
+<newline>
+<link index>Back to index
