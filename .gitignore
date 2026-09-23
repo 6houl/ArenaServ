@@ -1,12 +1,9 @@
-﻿# .gitignore audit and enhancement
-
-# Original .gitignore
+﻿# IDE and build output
 .vscode/*
 !.vscode/c_cpp_properties.json
 !.vscode/launch.json
 !.vscode/tasks.json
 
-# Build output (correct)
 build/
 install/
 scripts/download/
@@ -20,7 +17,7 @@ json/
 gtest-download/*
 !gtest-download/CMakeLists.txt.in
 
-# Additional ignores for safety
+# Binaries and compiled output
 *.exe
 *.obj
 *.o
@@ -30,13 +27,13 @@ gtest-download/*
 *.so
 *.dylib
 
-# Database files (runtime data)
+# Database files
 *.db
 *.sdb
 *.sqlite
 *.sql3
 
-# Local configuration (may contain credentials)
+# Local configuration
 config_local/**
 !config_local/.gitignore
 
@@ -46,7 +43,7 @@ config_local/**
 *.suo
 *.sln.docstates
 
-# OS junk
+# OS files
 .DS_Store
 Thumbs.db
 desktop.ini
@@ -61,8 +58,12 @@ desktop.ini
 *.old
 *~
 
-# Compressed archives (often contain binaries)
+# Archives
 *.zip
 *.tar.gz
 *.7z
 *.rar
+
+# Reference directories
+EODev/
+references/
