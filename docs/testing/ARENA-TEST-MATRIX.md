@@ -514,3 +514,48 @@
 **Tests Executed:** 0  
 **Status:** Test matrix established, implementation pending Phase 1
 
+
+---
+
+## Test Implementation Status (ISSUE-001)
+
+**Date:** 2026-09-23  
+**Branch:** `test/arena-instrumentation`  
+**Commit:** (pending)
+
+### Implemented Tests
+
+| Test ID | Name | File | Status | Result |
+|---------|------|------|--------|--------|
+| ARENA-STRUCT-001 | Header Compiles | arena_test.cpp | ✅ Automated | PASS |
+| ARENA-STRUCT-002 | Arena_Spawn Structure | arena_test.cpp | ✅ Automated | PASS |
+| ARENA-STRUCT-003 | Coordinate Types | arena_test.cpp | ✅ Automated | PASS |
+| ARENA-STRUCT-004 | Bug #3 Investigation | arena_test.cpp | ✅ Automated | PASS |
+
+**Total Arena Tests:** 4 implemented, 4 passing
+
+### Test Baseline Maintained
+
+**Before ISSUE-001:**
+- 46 tests total
+- 25 passing
+- 21 failing (mock leaks)
+
+**After ISSUE-001:**
+- 50 tests total (+4 Arena tests)
+- 29 passing (+4 Arena tests)
+- 21 failing (unchanged - mock leaks preserved)
+
+**Constraint Satisfied:** ✅ No increase in failure count
+
+### Tests NOT Implemented (Require World/Map Infrastructure)
+
+Full Arena instance tests deferred - require significant integration test infrastructure:
+- ARENA-CONFIG-001 (Arena construction)
+- ARENA-ENTRY-001, 002 (player entry)
+- ARENA-STATE-001, 002 (state transitions)
+- ARENA-MATCH-001 (match lifecycle)
+- ARENA-COMBAT-XXX (attack tests)
+
+**Rationale:** Arena constructor requires Map*, which requires World*, database, timer infrastructure. Structural tests provide baseline without infrastructure complexity.
+
