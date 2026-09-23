@@ -44,7 +44,7 @@ Add minimal debug instrumentation to Arena to support bug reproduction and verif
 - [ ] Debug logs verify Arena events
 - [ ] Documented in TEST-INFRASTRUCTURE.md
 
-**Estimated Effort:** 1-2 days  
+**Estimated Effort:** See acceptance criteria and dependencies  
 **Dependencies:** None  
 **Branch:** `test/arena-instrumentation`
 
@@ -73,7 +73,7 @@ No validation on arena spawn coordinates from config. Out-of-bounds coordinates 
 - [ ] Test with valid config (entry succeeds)
 - [ ] Documentation updated
 
-**Estimated Effort:** 1 day  
+**Estimated Effort:** See acceptance criteria and dependencies  
 **Dependencies:** ISSUE-001 (test infrastructure)  
 **Branch:** `fix/arena-spawn-validation`
 
@@ -101,7 +101,7 @@ Occupant counter decremented in multiple code paths without centralized manageme
 - [ ] Test exception scenarios
 - [ ] Documentation updated
 
-**Estimated Effort:** 2 days  
+**Estimated Effort:** See acceptance criteria and dependencies  
 **Dependencies:** ISSUE-001 (test infrastructure)  
 **Branch:** `fix/arena-occupant-state`
 
@@ -130,7 +130,7 @@ Deferred action queue in `Arena::Attack()` operates on stale state when reentran
 - [ ] State remains valid after reentrant scenario
 - [ ] Documentation updated
 
-**Estimated Effort:** 2-3 days  
+**Estimated Effort:** See acceptance criteria and dependencies  
 **Dependencies:** ISSUE-001 (test infrastructure)  
 **Branch:** `fix/arena-state-transition`
 
@@ -168,7 +168,7 @@ Original claim: Arena accessed after destruction (use-after-free). Phase 0.5 ana
 - [ ] Fix implemented if bug confirmed
 - [ ] Test passes with fix
 
-**Estimated Effort:** 2-3 days  
+**Estimated Effort:** See acceptance criteria and dependencies  
 **Dependencies:** ISSUE-001 (test infrastructure)  
 **Branch:** `research/arena-timer-lifetime`
 
@@ -201,7 +201,7 @@ Kill counter may overflow with large values. Determine if this is a realistic is
 - [ ] Test with boundary values
 - [ ] Documentation updated
 
-**Estimated Effort:** 1 day  
+**Estimated Effort:** See acceptance criteria and dependencies  
 **Dependencies:** None  
 **Branch:** `research/arena-kill-counter`
 
@@ -235,22 +235,6 @@ ISSUE-001 (Test Infrastructure)
 ---
 
 ## Implementation Order Recommendation
-
-### Week 1
-1. ISSUE-001 (Foundation)
-2. ISSUE-002 (Simplest bug, quick win)
-
-### Week 2
-3. ISSUE-006 (Assessment, low risk)
-4. ISSUE-003 (Occupant desync, medium complexity)
-
-### Week 3
-5. ISSUE-004 (Reentrancy, high complexity)
-6. ISSUE-005 (Timer investigation, requires ASan)
-
-**Total Estimated Effort:** 10-14 days
-
----
 
 ## Success Metrics
 
@@ -330,6 +314,6 @@ Phase 2: Core Arena Features (matchmaking, queue, modes)
 **Commit:** db4602e (M0.9 baseline)  
 **Issues Defined:** 6  
 **Issues Created:** 0 (awaiting authorization)  
-**Estimated Effort:** 10-14 days  
+**Estimated Effort:** See acceptance criteria and dependencies  
 **Dependencies:** Linear (ISSUE-001 first, then parallel)
 

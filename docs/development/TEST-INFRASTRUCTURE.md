@@ -171,6 +171,32 @@ cd build/Release
 **Mock leak issues:** 21/46 (infrastructure, not production bugs)  
 **Test execution time:** ~4 seconds total
 
+
+---
+
+## Existing Test Debt (Pre-Arena Phase 1)
+
+**Baseline Status (M0.9):**
+- **46 tests execute**
+- **25 tests pass** (ConfigTests, DatabaseThreadAffinityTest, SemaphoreTests, ThreadPoolTests)
+- **21 tests fail/report errors** (WorldDumpTest, LoginTests)
+
+**Failure Cause:** Mock object lifecycle management issues in test harness (not production code bugs)
+
+**Critical Constraint for Phase 1:**
+- Arena Phase 1 work MUST NOT silently increase the failure count
+- Arena tests must not introduce new mock lifecycle issues
+- Pre-existing 21 failures are documented baseline
+- Any increase in failures beyond 21 requires investigation
+
+**Test Results Comparison Required:**
+- Before Arena work: 25 pass, 21 fail
+- After Arena work: Compare against this baseline
+- Report: new tests added, new failures introduced (if any), pre-existing failures maintained
+
+**Status:** Test debt documented. Arena Phase 1 will not fix unrelated upstream test infrastructure issues.
+
+---
 ---
 
 ## Arena Test Coverage
